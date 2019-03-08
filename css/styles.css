@@ -444,6 +444,7 @@ header {
 .services p {
   margin: 0 0 10px;
 }
+
 .services h3 {
   font-size: 1.4em;
   line-height: 1em;
@@ -454,6 +455,11 @@ header {
   letter-spacing: 1px;
   opacity: 0.9;
 }
+@media only screen and (max-width: 575.98px)
+  {
+    .services h3 {
+    font-size: 1.2em;
+  }
 
 /*BENIFITS*/
 .benifits-all {
