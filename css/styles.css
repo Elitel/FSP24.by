@@ -31,11 +31,11 @@
 body {
   font-family: Qanelas;
   font-size: 16px;
-  font-weight: 00;
+  font-weight: 400;
 }
 @media only screen and (max-width: 575.98px) {
   body {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 section {
@@ -57,10 +57,18 @@ h6 {
 }
 h2.section-header {
   margin-top: 1em;
+  padding: 15px;
   margin-bottom: 1em;
   color: #909090;
   text-transform: uppercase;
   text-align: center;
+}
+@media only screen and (max-width: 575.98px)
+{
+  h2.section-header
+  {
+  font-size: 1.2em!important;
+  }
 }
 a
 {
@@ -445,6 +453,13 @@ header {
   height: 300%;
   background-image: -webkit-linear-gradient(top, transparent 80%, #ffffff 100%);
   background-image: linear-gradient(to bottom, transparent 80%, #ffffff 100%);
+}
+@media only screen and (max-width: 575.98px)
+{
+  .services figcaption:before
+{
+  height: 200%;
+}
 }
 .services h3,
 .services p {
