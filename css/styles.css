@@ -33,11 +33,6 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
-@media only screen and (max-width: 575.98px) {
-  body {
-    font-size: 15px;
-  }
-}
 section {
   position: relative;
   padding-top: 6em;
