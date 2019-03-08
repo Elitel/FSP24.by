@@ -244,6 +244,7 @@ header {
   position: relative;
   background-color: white;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
