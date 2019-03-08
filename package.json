@@ -1,0 +1,26 @@
+{
+  "name": "fsp24.by",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">0.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elitel/FSP24.by.git"
+  },
+  "author": "Elitel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Elitel/FSP24.by/issues"
+  },
+  "homepage": "https://github.com/Elitel/FSP24.by#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
