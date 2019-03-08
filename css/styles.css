@@ -62,7 +62,7 @@ h2.section-header {
 {
   h2.section-header
   {
-  font-size: 1.2em!important;
+  font-size: 1.5em!important;
   }
 }
 a
@@ -95,7 +95,7 @@ a:active
   display: block;
   background: #c5263b;
   text-decoration: none;
-  padding: 20px;
+  padding: 15px;
   color: white;
   position: relative;
   overflow: hidden;
@@ -290,7 +290,7 @@ header .overlay {
   height: 100%;
   width: 100%;
   background-color: white;
-  opacity: 0.3;
+  opacity: 0.4;
   z-index: 1;
 }
 header {
@@ -350,8 +350,13 @@ header {
     height: 60px;
   }
   .repair-service > p {
+    margin-bottom: 0.5em;
     margin-left: 30px;
     font-size: 1em;
+  }
+  .repair-service  ul
+  {
+    margin-bottom: 0.5em;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -525,7 +530,6 @@ header {
 @media only screen and (max-width: 575.98px)
   {
     .benifits .benif p {
-      color: #909090;
       font-size: 16px;
     }
   }
