@@ -33,6 +33,11 @@ body {
   font-size: 16px;
   font-weight: 00;
 }
+@media only screen and (max-width: 575.98px) {
+  body {
+    font-size: 14px;
+  }
+}
 section {
   position: relative;
   padding-top: 6em;
@@ -135,10 +140,11 @@ a:active
   z-index: 9;
 }
 @media only screen and (max-width: 575.98px)
-{
-  .ct-btn-scroll {
+  {
+    .ct-btn-scroll {
     bottom: 20px;
-}
+    }
+  }
 .ct-btn-scroll i {
   color: rgb(255, 255, 255);
   top: 3px;
@@ -161,7 +167,6 @@ a:active
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
 }
-
 .arrow-to-scoll i {
   margin: 0;
   left: 10px;
@@ -459,7 +464,8 @@ header {
 @media only screen and (max-width: 575.98px)
   {
     .services h3 {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    }
   }
 
 /*BENIFITS*/
@@ -506,6 +512,13 @@ header {
   font-size: 50px;
   color: #c5263b;
 }
+@media only screen and (max-width: 575.98px)
+  {
+    .benifits .benif p {
+      color: #909090;
+      font-size: 16px;
+    }
+  }
 
 /*TIMELINE*/
 .timeline-item {
@@ -552,12 +565,16 @@ header {
   text-align: center;
   margin-top: 3.5em;
   margin-bottom: 3.5em;
-  background-color: #909090;
   background-image: url("../images/nikolai-chernichenko-1210824-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-
+}
+@media only screen and (max-width: 575.98px)
+{
+  .price-table-wrapper {
+  background-image: none;
+  }
 }
 .price-table-wrapper .pricing-table {
   box-shadow: 0px 0px 19px -3px rgba(0, 0, 0, 0.4);
