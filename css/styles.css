@@ -35,8 +35,9 @@ body {
 }
 section {
   position: relative;
-  padding-top: 6em;
+  padding-top: 3.5em;
 }
+
 section hr {
   width: 200px;
   height: 1px;
@@ -53,7 +54,6 @@ h6 {
 h2.section-header {
   margin-top: 1em;
   padding: 15px;
-  margin-bottom: 1em;
   color: #909090;
   text-transform: uppercase;
   text-align: center;
