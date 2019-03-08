@@ -19,9 +19,9 @@
     <!--Header-->
     <header>
         <!--Прелоадер-->
-        <div class="preloader">
-            <div class="loader"></div>
-        </div>
+        <div id="loader-wrapper">
+                <div id="loader"></div>
+              </div>
         <a href="javascript:" class="d-none d-lg-block d-xl-block return-to-top arrow-to-scoll"><i class="fas fa-angle-up"></i></a>
         <!--Лого-->
         <nav class="navbar scrolling-navbar fixed-top navbar-expand-lg navbar-light">
@@ -270,7 +270,8 @@
                     </p>
                 </figcaption>
             </figure>
-            <figure class="services col-xl-4 col-md-6"><img class="image" src="images/tablet-2188370_1920.jpg"
+            <figure class="services col-xl-4 col-md-6">
+                <img onload="contsize"class="image" src="images/tablet-2188370_1920.jpg"
                     alt="Установка программ" />
                 <figcaption class="figcaption">
                     <h3>Установка программ

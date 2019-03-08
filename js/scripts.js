@@ -26,7 +26,8 @@ $('.return-to-top').click(function () { // When arrow is clicked
   }, 800);
 });
 
-$(window).load(function () {
+
+$(document).ready(function () {
   contsize();
 });
 $(window).bind("resize", function () {
