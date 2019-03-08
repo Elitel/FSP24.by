@@ -33,11 +33,6 @@ body {
   font-size: 16px;
   font-weight: 00;
 }
-@media only screen and (max-width: 575.98px) {
-  body {
-    font-size: 14px;
-  }
-}
 section {
   position: relative;
   padding-top: 6em;
@@ -139,6 +134,11 @@ a:active
   margin: auto;
   z-index: 9;
 }
+@media only screen and (max-width: 575.98px)
+{
+  .ct-btn-scroll {
+    bottom: 20px;
+}
 .ct-btn-scroll i {
   color: rgb(255, 255, 255);
   top: 3px;
@@ -161,6 +161,7 @@ a:active
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
 }
+
 .arrow-to-scoll i {
   margin: 0;
   left: 10px;
@@ -458,7 +459,7 @@ header {
 @media only screen and (max-width: 575.98px)
   {
     .services h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
 /*BENIFITS*/
