@@ -4,7 +4,6 @@ var path = require('path');
 var nodemailer = require('nodemailer');
 
 var app = express();
-app.set('view engine', 'ejs');
 
 var port = process.env.PORT || 3000;
 
