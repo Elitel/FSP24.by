@@ -30,7 +30,7 @@ app.post('/send', function (req, res) {
   </ul>
   <h3>Информация о неисправности</h3>
   <ul>
-    <li>Устройство: ${req.body.divece}</li>
+    <li>Устройство: ${req.body.device}</li>
     <li>Описание: ${req.body.problem}</li>
   </ul>
   `;
