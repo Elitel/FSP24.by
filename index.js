@@ -25,8 +25,8 @@ app.post('/send', function (req, res) {
   `
   <h3>Информация о клиенте:</h3>
   <ul>
-    <li>Имя: ${req.body.client-name}</li>
-    <li>Телефон: ${req.body.phone-number}</li>
+    <li>Имя: ${req.body.name}</li>
+    <li>Телефон: ${req.body.number}</li>
   </ul>
   <h3>Информация о неисправности</h3>
   <ul>
@@ -35,19 +35,20 @@ app.post('/send', function (req, res) {
   </ul>
   `;
   let transporter = nodeMailer.createTransport({
-      host: 'smtp.gmail.com',
-      port: 465,
-      secure: true,
+    service: 'gmail',
       auth: {
           user: 'fastserviceplus24@gmail.com',
           pass: 'FSP24fsp24'
+      },
+      tls:{
+              rejectUnauthorized: false
       }
   });
   let mailOptions = {
       from: '"FSP24" <fastserviceplus24@gmail.com>', // sender address
-      to: 'fastserviceplus24@gmail.com, Alitali@yandex.ru', // list of receivers
-      subject: 'УРА!!', // Subject line
-      text: 'УРА!', // plain text body
+      to: 'fastserviceplus24@gmail.com',
+      subject: 'Новый клиент', // Subject line
+      text: 'Новый клиент', // plain text body
       html: output // html body
   };
 
@@ -56,8 +57,8 @@ app.post('/send', function (req, res) {
           return console.log(error);
       }
       console.log('Message %s sent: %s', info.messageId, info.response);
-          res.render('index');
-      });
+      res.render('index', {msg: 'Сообщение отправлено'})
+    });
   });
 app.listen(port, function () {
   console.log('App listening...');
