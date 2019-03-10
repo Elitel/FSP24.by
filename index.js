@@ -34,19 +34,18 @@ app.post('/send-email', (req, res) => {
   </ul>
   `;
   let transporter = nodeMailer.createTransport({
-    host: 'smtp.ethereal.email',
-    port: 587,
+    service: 'Yandex', // no need to set host or port etc.
     auth: {
-        user: 'jody.barrows45@ethereal.email',
-        pass: 'rRHm9ZfFQnvP1dxz76'
+        user: 'Alitali@yandex.ru',
+        pass: 'Alitali25'
     }
 });
 let mailOptions = {
-    from: '"FSP24" <fsp@gmail.com>', // sender address
-    to: 'FSP24', // list of receivers
+    from: '"Луговская Татьяна" <Alitali@yandex.ru>', // sender address
+    to:  'Alitali@yandex.ru',// list of receivers
     subject: 'Новый запрос', // Subject line
-    text: req.body.body, // plain text body
-    html: output// html body
+    text: '', // plain text body
+    html: '<b>NodeJS Email Tutorial</b>' // html body
 };
 
 transporter.sendMail(mailOptions, (error, info) => {
