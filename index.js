@@ -34,20 +34,19 @@ app.post('/send-email', (req, res) => {
   </ul>
   `;
   let transporter = nodeMailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
-    secure: true,
+    host: 'smtp.ethereal.email',
+    port: 587,
     auth: {
-        user: 'xxx@xx.com',
-        pass: 'xxxx'
+        user: 'jody.barrows45@ethereal.email',
+        pass: 'rRHm9ZfFQnvP1dxz76'
     }
 });
 let mailOptions = {
-    from: '"Krunal Lathiya" <xx@gmail.com>', // sender address
-    to: req.body.to, // list of receivers
-    subject: req.body.subject, // Subject line
+    from: '"FSP24" <fsp@gmail.com>', // sender address
+    to: 'FSP24', // list of receivers
+    subject: 'Новый запрос', // Subject line
     text: req.body.body, // plain text body
-    html: '<b>NodeJS Email Tutorial</b>' // html body
+    html: output// html body
 };
 
 transporter.sendMail(mailOptions, (error, info) => {
