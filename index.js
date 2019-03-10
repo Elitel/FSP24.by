@@ -1,23 +1,26 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var exphbs = require('express-handlebars');
 var path = require('path');
-var nodemailer = require('nodemailer');
+var nodeMailer = require('nodemailer');
 
 var app = express();
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
 
 var port = process.env.PORT || 3000;
 
 //Static folder
-app.use(express.static(__dirname + "/public"));
+app.use("/public", express.static(path.join(__dirname, 'public')));
 
 //Body Parser Middleware
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
   res.render('index');
 });
-app.post('/send-email', function (req, res) {
+app.post('/send', function (req, res) {
   var output =
   `
   <h3></h3>
