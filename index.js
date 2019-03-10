@@ -29,7 +29,7 @@ app.post('/send-email', (req, res) => {
   </ul>
   <h3>Информация о неполадке:</h3>
   <ul>
-    <li>Устройство: ${req.body.divece}</li>
+    <li>Устройство: ${req.body.device}</li>
     <li>Описание неполадки: ${req.body.problem}</li>
   </ul>
   `;
