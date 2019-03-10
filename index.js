@@ -23,10 +23,16 @@ app.get('/', function (req, res) {
 app.post('/send', function (req, res) {
   var output =
   `
-  <h3></h3>
-  <ul>Имя: ${req.body.client_name}</ul>
-  <ul></ul>
-  <h3></h3>
+  <h3>Информация о клиенте:</h3>
+  <ul>
+    <li>Имя: ${req.body.client-name}</li>
+    <li>Телефон: ${req.body.phone-number}</li>
+  </ul>
+  <h3>Информация о неисправности</h3>
+  <ul>
+    <li>Устройство: ${req.body.divece}</li>
+    <li>Описание: ${req.body.problem}</li>
+  </ul>
   `;
   let transporter = nodeMailer.createTransport({
       host: 'smtp.gmail.com',
@@ -39,7 +45,7 @@ app.post('/send', function (req, res) {
   });
   let mailOptions = {
       from: '"FSP24" <fastserviceplus24@gmail.com>', // sender address
-      to: 'fastserviceplus24@gmail.com', // list of receivers
+      to: 'fastserviceplus24@gmail.com, Alitali@yandex.ru', // list of receivers
       subject: 'УРА!!', // Subject line
       text: 'УРА!', // plain text body
       html: output // html body
