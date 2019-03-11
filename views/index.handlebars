@@ -63,7 +63,7 @@
         </nav>
         <div class="overlay"></div>
         <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="../public/images/Morning-Routine.mp4" type="video/mp4">
+            <source src="../public/images/Morning-Routine.webm" type="video/webm">
         </video>
         <div class="container h-100 w-100 text-black">
             <div class="repair-service">
@@ -84,7 +84,7 @@
                 <p>
                     Работа с программным обеспечением под ключ.
                 </p>
-                    <a data-toggle="modal" data-target="#exampleModal" class="form-button col-11 text-uppercase" href="">
+                    <a data-toggle="modal" data-target="#contact" class="form-button col-11 text-uppercase" href="">
                         Заказать ремонт
                     </a>
             </div>
@@ -414,7 +414,7 @@
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <a target="_blank" class="form-button text-uppercase" href="">
+                            <a data-toggle="modal" data-target="#contact" class="form-button text-uppercase" href="">
                                 Заказать ремонт
                             </a>
                         </td>
@@ -464,7 +464,7 @@
     </footer>
     <!-- Footer -->
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
@@ -488,11 +488,11 @@
                         <label class="control-label" for="device">Устройство</label>
                           <select id="device" name="device" class="form-control" required>
                             <option value="">Выберите устройство</option>
-                            <option name="Компьютер" value="Компьютер">Компьютер</option>
-                            <option name="Ноутбук" value="Ноутбук">Ноутбук</option>
-                            <option name="Телефон" value="Телефон">Телефон</option>
-                            <option name="Планшет" value="Планшет">Планшет</option>
-                            <option name="Другое" value="Другое">Другое</option>
+                            <option value="Компьютер">Компьютер</option>
+                            <option value="Ноутбук">Ноутбук</option>
+                            <option value="Телефон">Телефон</option>
+                            <option value="Планшет">Планшет</option>
+                            <option value="Другое">Другое</option>
                           </select>
                     </div>
                     <div class="form-group">
@@ -500,8 +500,8 @@
                       <textarea rows="3" type="text" class="form-control" id="problem" name="problem"></textarea>
                     </div>
                     <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
                           </div>
                         </div>
                   </form>

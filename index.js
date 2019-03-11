@@ -57,7 +57,7 @@ app.post('/send', function (req, res) {
           return console.log(error);
       }
       console.log('Message %s sent: %s', info.messageId, info.response);
-      res.render('index', {msg: 'Сообщение отправлено'})
+      res.render('index', {msg: 'Сообщение уже отправлено'})
     });
   });
 app.listen(port, function () {
