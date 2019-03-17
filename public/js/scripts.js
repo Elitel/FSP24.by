@@ -26,46 +26,6 @@ $('.return-to-top').click(function () { // When arrow is clicked
   }, 800);
 });
 
-
-$(document).ready(function () {
-  contsize();
-});
-$(window).bind("resize", function () {
-  contsize();
-});
-
-function contsize() {
-  $('.figcaption').each(function () {
-    var width = $(this).prev().width();
-    $(this).css('width', width);
-    var height = $(this).parent().height() - parseInt($('.services h3').css("font-size")) - parseInt($(this).css("padding-top")) - parseInt($(this).css("line-height")) * 1.5;
-    $(this).css('top', height);
-  })
-};
-
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-  $('.figcaption').click(function () {
-    var clicks = $(this).data('clicks');
-    if (clicks) {
-      var height = $(this).parent().height() - $(this).height() - parseInt($(this).css("padding-bottom"));
-      $(this).css('top', height);
-    } else {
-      var height = $(this).parent().height() - parseInt($('.services h3').css("font-size")) - parseInt($(this).css("padding-top")) - parseInt($(this).css("line-height")) * 1.5;
-      $(this).css('top', height);
-    }
-    $(this).data("clicks", !clicks);
-  });
-} else {
-  $('.figcaption').hover(function () {
-      var height = $(this).parent().height() - $(this).height() - parseInt($(this).css("padding-bottom"));
-      $(this).css('top', height);
-    },
-    function () {
-      var height = $(this).parent().height() - parseInt($('.services h3').css("font-size")) - parseInt($(this).css("padding-top")) - parseInt($(this).css("line-height")) * 1.5;
-      $(this).css('top', height);
-    });
-};
-
 $(document).ready(function()
 {
   if ($('.navbar').offset().top>50)
@@ -79,7 +39,7 @@ $(document).ready(function()
       $('.navbar').removeClass('transparent');
     }
   });
-})
+});
 
 
 // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -94,3 +54,6 @@ window.addEventListener('resize', () => {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
 
+$('body').on('click', '.card-body', function() {
+  $(this).closest('.card').toggleClass("active");
+});
