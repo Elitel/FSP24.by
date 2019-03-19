@@ -483,8 +483,7 @@ header {
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.card.col-xl-4,
-.card.col-md-6 {
+.card {
   padding: 0;
 }
 
@@ -621,7 +620,7 @@ header {
   }
 
   .card .card-body {
-    top: calc(100% - 3.5em);
+    top: calc(100% - 3.2em);
   }
 
   .card.active .card-body {
@@ -643,7 +642,7 @@ header {
   }
 
   .card .card-body h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
 
   .card .card-body div {
@@ -679,7 +678,7 @@ header {
   }
 
   .card .card-body h1 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .card .card-body div {
@@ -751,7 +750,7 @@ header {
   }
 
   .card .card-body h1 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .card .card-body div {
