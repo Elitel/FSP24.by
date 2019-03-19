@@ -539,151 +539,225 @@ header {
   text-transform: uppercase;
   display: block;
   padding: 0px;
-  margin:0px;
+  margin: 0px;
   color: black;
 }
-@media only screen and (max-width: 399.98px)
-{
+
+@media only screen and (max-width: 399.98px) {
   .card .card-body .controls a {
-  font-size: 1.1em;
+    font-size: 1.1em;
   }
+
   .card .card-body {
     top: calc(100% - 2.5em);
   }
+
   .card.active .card-body {
     top: 0%;
     bottom: 0px;
   }
+
   .card .card-body .controls {
     height: 2em;
   }
+
   .card.active .card-body .controls {
     height: 2em;
   }
+
   .card .card-body .controls a {
     height: 50px;
     width: 50px;
   }
+
   .card .card-body h1 {
     font-size: 1em;
   }
+
   .card .card-body div {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 }
-@media only screen and (min-width: 400px) and (max-width: 575.98px)
-{
+
+@media only screen and (min-width: 400px) and (max-width: 575.98px) {
   .card .card-body .controls a {
-  font-size: 1.2em;
+    font-size: 1.2em;
   }
+
   .card .card-body {
     top: calc(100% - 3em);
   }
+
   .card.active .card-body {
-    top: 0%;
+    top: 20%;
     bottom: 0px;
   }
+
   .card .card-body .controls {
     height: 3em;
   }
+
   .card.active .card-body .controls {
     height: 2em;
   }
+
   .card .card-body .controls a {
     height: 50px;
     width: 50px;
   }
+
   .card .card-body h1 {
     font-size: 1em;
   }
+
   .card .card-body div {
     font-size: 1em;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767.98px) {
   .card .card-body .controls a {
     font-size: 1.5em;
-    }
-    .card .card-body {
-      top: calc(100% - 3.5em);
-    }
-    .card.active .card-body {
-      top: 0%;
-      bottom: 0px;
-    }
-    .card .card-body .controls {
-      height: 3.5em;
-    }
-    .card.active .card-body .controls {
-      height: 3em;
-    }
-    .card .card-body .controls a {
-      height: 50px;
-      width: 50px;
-    }
-    .card .card-body h1 {
-      font-size: 1.3em;
-    }
-    .card .card-body div {
-      font-size: 1em;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 991.98px) {
-    .card .card-body .controls a {
-    font-size: 1.2em;
-    }
-    .card .card-body {
-      top: calc(100% - 3em);
-    }
-    .card.active .card-body {
-      top: 0%;
-      bottom: 0px;
-    }
-    .card .card-body .controls {
-      height: 3em;
-    }
-    .card.active .card-body .controls {
-      height: 2em;
-    }
-    .card .card-body .controls a {
-      height: 50px;
-      width: 50px;
-    }
-    .card .card-body h1 {
-      font-size: 1.1em;
-    }
-    .card .card-body div {
-      font-size: 1em;
-    }
   }
-@media only screen and (min-width: 992px) { 
+
+  .card .card-body {
+    top: calc(100% - 3.5em);
+  }
+
+  .card.active .card-body {
+    top: 50%;
+    bottom: 0px;
+  }
+
+  .card .card-body .controls {
+    height: 3.5em;
+  }
+
+  .card.active .card-body .controls {
+    height: 3em;
+  }
+
+  .card .card-body .controls a {
+    height: 50px;
+    width: 50px;
+  }
+
+  .card .card-body h1 {
+    font-size: 1.3em;
+  }
+
+  .card .card-body div {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
   .card .card-body .controls a {
     font-size: 1.2em;
-    }
-    .card .card-body {
-      top: calc(100% - 3em);
-    }
-    .card.active .card-body {
-      top: 0%;
-      bottom: 0px;
-    }
-    .card .card-body .controls {
-      height: 3em;
-    }
-    .card.active .card-body .controls {
-      height: 2em;
-    }
-    .card .card-body .controls a {
-      height: 50px;
-      width: 50px;
-    }
-    .card .card-body h1 {
-      font-size: 1.1em;
-    }
-    .card .card-body div {
-      font-size: 1em;
-    }
   }
+
+  .card .card-body {
+    top: calc(100% - 3em);
+  }
+
+  .card.active .card-body {
+    top: 20%;
+    bottom: 0px;
+  }
+
+  .card .card-body .controls {
+    height: 3em;
+  }
+
+  .card.active .card-body .controls {
+    height: 2em;
+  }
+
+  .card .card-body .controls a {
+    height: 50px;
+    width: 50px;
+  }
+
+  .card .card-body h1 {
+    font-size: 1.1em;
+  }
+
+  .card .card-body div {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .card .card-body .controls a {
+    font-size: 1.2em;
+  }
+
+  .card .card-body {
+    top: calc(100% - 3em);
+  }
+
+  .card.active .card-body {
+    top: 40%;
+    bottom: 0px;
+  }
+
+  .card .card-body .controls {
+    height: 3em;
+  }
+
+  .card.active .card-body .controls {
+    height: 2em;
+  }
+
+  .card .card-body .controls a {
+    height: 50px;
+    width: 50px;
+  }
+
+  .card .card-body h1 {
+    font-size: 1.1em;
+  }
+
+  .card .card-body div {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card .card-body .controls a {
+    font-size: 1.2em;
+  }
+
+  .card .card-body {
+    top: calc(100% - 3em);
+  }
+
+  .card.active .card-body {
+    top: 25%;
+    bottom: 0px;
+  }
+
+  .card .card-body .controls {
+    height: 3em;
+  }
+
+  .card.active .card-body .controls {
+    height: 2em;
+  }
+
+  .card .card-body .controls a {
+    height: 50px;
+    width: 50px;
+  }
+
+  .card .card-body h1 {
+    font-size: 1.1em;
+  }
+
+  .card .card-body div {
+    font-size: 1em;
+  }
+}
 
 .card .card-body div {
   display: block;
@@ -833,7 +907,7 @@ header {
 .price-table-wrapper .pricing-table__header {
   padding: 20px;
   margin: 10px;
-  font-size: 16px;
+  font-size: 1em;
   color: #909090;
   background: rgba(240, 240, 240);
 }
@@ -842,12 +916,13 @@ header {
   color: #909090;
   padding: 20px;
   margin: auto;
-  font-size: 40px;
+  font-size: 2.5em;
   font-weight: 500;
 }
 
 .price-table-wrapper table.pricing-table__list {
   margin: 20px;
+  margin-top: 0px;
   color: #a0a0a0;
 }
 
@@ -886,7 +961,29 @@ td.price {
   opacity: 1;
   padding-right: 15px;
 }
-
+@media only screen and (max-width: 575.98px)
+{
+  .price-table-wrapper .pricing-table__header {
+    padding: 15px;
+  }
+  .price-table-wrapper .pricing-table__price
+  {
+    font-size: 2em;
+  }
+  .price-table-wrapper .pricing-table__list td.price
+  {
+    padding: 0px;
+  }
+  .price-table-wrapper .pricing-table__list td
+  {
+    padding: 10px 5px;
+  }
+  .price-table-wrapper table.pricing-table__list {
+    margin: 10px;
+    margin-top: 0px;
+    color: #a0a0a0;
+  }
+}
 /*FOOTER*/
 .page-footer {
   background-color: rgb(240, 240, 240);
