@@ -843,14 +843,13 @@ header {
 
 .benifits .benif {
   width: 25%;
-  height: 170px;
-  padding: 50px 0px;
+  height: 150px;
+  padding: 0px 0px;
   text-align: center;
 }
-
 .benifits .benif p {
   color: #909090;
-  font-size: 18px;
+  font-size: 1em;
   margin: 0;
   padding: 10px;
   font-family: "Open Sans";
@@ -864,7 +863,10 @@ header {
 
 @media only screen and (max-width: 575.98px) {
   .benifits .benif p {
-    font-size: 16px;
+    font-size: 1em;
+  }
+  .benifits .benif i {
+    font-size: 45px;
   }
 }
 
