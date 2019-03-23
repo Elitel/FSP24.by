@@ -57,3 +57,10 @@ window.addEventListener('resize', () => {
 $('body').on('click', '.card-body', function() {
   $(this).closest('.card').toggleClass("active");
 });
+
+$(function(){ 
+  var navMain = $(".navbar-collapse"); 
+  navMain.on("click", "a:not([data-toggle])", null, function () {
+      navMain.collapse('hide');
+  });
+});
