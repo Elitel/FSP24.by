@@ -54,10 +54,10 @@ app.post('/send', function (req, res) {
 
   transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-          return console.log(error);
+        return console.log(error);
       }
       console.log('Message %s sent: %s', info.messageId, info.response);
-      res.render('index', {msg: 'Сообщение уже отправлено'})
+      res.redirect('/');
     });
   });
 app.listen(port, function () {

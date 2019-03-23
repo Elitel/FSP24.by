@@ -24,6 +24,12 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+@media only screen and (max-width: 399.98px)
+{
+  body {
+    font-size: 15px;
+  }
+}
 
 section {
   position: relative;
@@ -365,8 +371,35 @@ header {
   opacity: 1;
   padding-right: 15px;
 }
+@media only screen and (max-width: 399.98px)  {
+  .repair-service>h1 {
+    font-size: 1.6em;
+    line-height: 0.3em;
+  }
 
-@media only screen and (max-width: 575.98px) {
+  .repair-service>h2 {
+    line-height: 1em;
+    font-size: 0.9em;
+    left: 30px;
+    bottom: 20px;
+  }
+
+  .repair-service>h1>img {
+    height: 50px;
+  }
+
+  .repair-service>p {
+    margin-bottom: 0.5em;
+    margin-left: 30px;
+    font-size: 1em;
+  }
+
+  .repair-service ul {
+    margin-bottom: 0.5em;
+  }
+}
+
+  @media only screen and (min-width: 400px) and (max-width: 575.98px) {
   .repair-service>h1 {
     font-size: 1.7em;
     line-height: 0.3em;
@@ -544,7 +577,7 @@ header {
 
 @media only screen and (max-width: 399.98px) {
   .card .card-body .controls a {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   .card .card-body {
@@ -565,8 +598,8 @@ header {
   }
 
   .card .card-body .controls a {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
   }
 
   .card .card-body h1 {
@@ -858,10 +891,6 @@ header {
   color: #909090;
 }
 
-.timeline-item>div>h3 {
-  font-size: 1.7em;
-}
-
 .timeline-item::after {
   width: 24px;
   height: 24px;
@@ -883,7 +912,27 @@ header {
     rgba(0, 0, 0, 0) 100%) 1;
   border-image: linear-gradient(to bottom, #c5263b 60%, rgba(0, 0, 0, 0) 100%) 1;
 }
-
+@media only screen and (max-width: 575.98px)
+{
+  .timeline-item>div>h3 {
+    font-size: 1.4em;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+  .timeline-item>div>h3 {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .timeline-item>div>h3 {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .timeline-item>div>h3 {
+    font-size: 1.7em;
+  }
+}
 
 /*PRICETABLE*/
 .price-table-wrapper {
