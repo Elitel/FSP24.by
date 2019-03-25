@@ -24,7 +24,13 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
-@media only screen and (max-width: 399.98px)  
+@media only screen and (min-width: 350px) and (max-width: 399.98px)
+{
+  body {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 349.98px)
 {
   body {
     font-size: 14px;
@@ -582,43 +588,9 @@ header {
   margin: 0px;
   color: black;
 }
-@media only screen and (max-width: 349.98px) {
-  .card .card-body .controls a {
-    font-size: 1em;
-  }
 
-  .card .card-body {
-    top: calc(100% - 3em);
-  }
 
-  .card.active .card-body {
-    top: 0%;
-    bottom: 0px;
-  }
-
-  .card .card-body .controls {
-    height: 2em;
-  }
-
-  .card.active .card-body .controls {
-    height: 2em;
-  }
-
-  .card .card-body .controls a {
-    height: 30px;
-    width: 30px;
-  }
-
-  .card .card-body h1 {
-    font-size: 1em;
-  }
-
-  .card .card-body div {
-    font-size: 1em;
-  }
-}
-
-@media only screen and (min-width: 350px) and (max-width: 399.98px) {
+@media only screen and  (max-width: 399.98px) {
   .card .card-body .controls a {
     font-size: 1.1em;
   }
