@@ -922,8 +922,9 @@ header {
 }
 
 .timeline-item:last-child {
-  border-left: 3.5px solid #c5263b;
-
+  border-color: #c5263b;
+  border-width: 0px 0px 0px 3.5px;
+  border-style: solid;
   -o-border-image: linear-gradient(to bottom,
     #c5263b 60%,
     rgba(0, 0, 0, 0) 100%) 1;
