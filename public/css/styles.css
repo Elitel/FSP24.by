@@ -24,16 +24,10 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
-@media only screen and (min-width: 350px) and (max-width: 399.98px)
+@media only screen  and (max-width: 399.98px)
 {
   body {
     font-size: 15px;
-  }
-}
-@media only screen and (max-width: 349.98px)
-{
-  body {
-    font-size: 14px;
   }
 }
 
@@ -173,17 +167,8 @@ a.form-button {
   top: 3px;
 }
 
-.cd-top.cd-top--show {
-  visibility: visible;
-  opacity: 1;
-}
-
-.cd-top.cd-top--fade-out {
-  opacity: 0.5;
-}
-
 .arrow-to-scoll {
-  z-index: 9;
+  z-index: 8;
   width: 50px;
   height: 50px;
   border-radius: 35px;
@@ -254,7 +239,6 @@ a.form-button {
   .navbar-nav>.nav-item {
     margin: auto;
   }
-
   .navbar-brand {
     font-size: 1.1em;
   }
@@ -263,7 +247,32 @@ a.form-button {
     background-color: rgb(255, 255, 255);
   }
 }
-
+@media only screen and (min-width: 992px) {
+  .navbar-brand {
+    font-size: 1.2em;
+  }
+  .navbar-nav>.nav-item
+  {
+    font-size: 17px;
+  }
+  .navbar-collapse .phone a
+  {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .navbar-brand {
+    font-size: 1.3em;
+  }
+  .navbar-nav>.nav-item
+  {
+    font-size: 1.1em;
+  }
+  .navbar-collapse .phone a
+  {
+    font-size: 1.1em;
+  }
+}
 /*PHONE NUMBER*/
 .phone i {
   font-size: 1em;
@@ -275,7 +284,7 @@ a.form-button {
   left: 0;
   right: 0;
   margin-left: auto;
-  z-index: 9;
+  z-index: 5;
 }
 
 .navbar-collapse .phone a {
@@ -410,6 +419,7 @@ header {
 
   .repair-service ul {
     margin-bottom: 0.5em;
+    font-size: 1em;
   }
 }
 
@@ -433,11 +443,12 @@ header {
   .repair-service>p {
     margin-bottom: 0.5em;
     margin-left: 30px;
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .repair-service ul {
     margin-bottom: 0.5em;
+    font-size: 1.1em;
   }
 }
 
@@ -460,7 +471,10 @@ header {
 
   .repair-service>p {
     margin-left: 30px;
-    font-size: 1.1em;
+    font-size: 1.3em;
+  }
+  .repair-service>ul{
+    font-size: 1.3em;
   }
 }
 
@@ -483,7 +497,10 @@ header {
 
   .repair-service>p {
     margin-left: 30px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+  }
+  .repair-service>ul{
+    font-size: 1.1em;
   }
 }
 
@@ -508,6 +525,9 @@ header {
     margin-left: 30px;
     font-size: 1.2em;
     font-weight: 400;
+  }
+  .repair-service>ul{
+    font-size: 1.1em;
   }
 }
 
@@ -581,7 +601,7 @@ header {
   color: #c5263b;
 }
 
-.card .card-body h1 {
+.card .card-body h3 {
   text-transform: uppercase;
   display: block;
   padding: 0px;
@@ -617,7 +637,7 @@ header {
     width: 30px;
   }
 
-  .card .card-body h1 {
+  .card .card-body h3 {
     font-size: 1em;
   }
 
@@ -653,7 +673,7 @@ header {
     width: 50px;
   }
 
-  .card .card-body h1 {
+  .card .card-body h3 {
     font-size: 1em;
   }
 
@@ -689,7 +709,7 @@ header {
     width: 50px;
   }
 
-  .card .card-body h1 {
+  .card .card-body h3 {
     font-size: 1.2em;
   }
 
@@ -725,8 +745,8 @@ header {
     width: 50px;
   }
 
-  .card .card-body h1 {
-    font-size: 1em;
+  .card .card-body h3 {
+    font-size: 1.1em;
   }
 
   .card .card-body div {
@@ -761,7 +781,7 @@ header {
     width: 50px;
   }
 
-  .card .card-body h1 {
+  .card .card-body h3 {
     font-size: 1.1em;
   }
 
@@ -797,8 +817,8 @@ header {
     width: 50px;
   }
 
-  .card .card-body h1 {
-    font-size: 1em;
+  .card .card-body h3 {
+    font-size: 1.1em;
   }
 
   .card .card-body div {
@@ -884,6 +904,17 @@ header {
     font-size: 45px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991.98px)
+{
+  .benifits .benif p {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .benifits .benif p {
+    font-size: 1.2em;
+  }
+}
 
 /*TIMELINE*/
 .timeline-item {
@@ -946,10 +977,17 @@ header {
   .timeline-item>div>h3 {
     font-size: 1.6em;
   }
+  
+  .timeline-item>div>p {
+    font-size: 1em;
+  }
 }
 @media only screen and (min-width: 992px) {
   .timeline-item>div>h3 {
     font-size: 1.7em;
+  }
+  .timeline-item>div>p {
+    font-size: 1.1em;
   }
 }
 
@@ -958,6 +996,8 @@ header {
   text-align: center;
   margin-top: 3.5em;
   margin-bottom: 3.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   background-image: url("../images/nikolai-chernichenko-1210824-unsplash.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1056,6 +1096,25 @@ td.price {
     margin: 10px;
     margin-top: 0px;
     color: #909090;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .price-table-wrapper .pricing-table__header {
+    font-size: 1.1em;
+  }
+  .price-table-wrapper .pricing-table__list td
+  {
+    font-size: 1.1em;
+  }
+}
+@media only screen and (min-width: 992px)
+{
+  .price-table-wrapper .pricing-table__header {
+    font-size: 1.1em;
+  }
+  .price-table-wrapper .pricing-table__list td
+  {
+    font-size: 1.1em;
   }
 }
 /*FOOTER*/

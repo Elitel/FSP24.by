@@ -10,7 +10,6 @@ app.set('view engine', 'handlebars');
 
 var port = process.env.PORT || 3000;
 
-//Static folder
 app.use("/public", express.static(path.join(__dirname, 'public')));
 
 //Body Parser Middleware
@@ -28,7 +27,7 @@ app.post('/send', function (req, res) {
     <li>Имя: ${req.body.name}</li>
     <li>Телефон: ${req.body.number}</li>
   </ul>
-  <h3>Информация о неисправности</h3>
+  <h3>Информация о неисправности:</h3>
   <ul>
     <li>Устройство: ${req.body.device}</li>
     <li>Описание: ${req.body.problem}</li>
@@ -45,11 +44,11 @@ app.post('/send', function (req, res) {
       }
   });
   let mailOptions = {
-      from: '"FSP24" <fastserviceplus24@gmail.com>', // sender address
+      from: '"FSP24" <fastserviceplus24@gmail.com>',
       to: 'fastserviceplus24@gmail.com',
-      subject: 'Новый клиент', // Subject line
-      text: 'Новый клиент', // plain text body
-      html: output // html body
+      subject: 'Новый клиент',
+      text: 'Новый клиент',
+      html: output
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
